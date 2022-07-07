@@ -31,46 +31,46 @@ class _MyAppState extends State<MyApp> {
   }
 
   void _angka(int i) {
-    int angkanya = int.parse(layar.text);
-    layar.text = ((angkanya * 10) + i).toString();
+    int angka = int.parse(layar.text);
+    layar.text = ((angka * 10) + i).toString();
     setState(() {});
   }
 
   plus() {
-    int angkanya = int.parse(layar.text);
-    simpanangka.add(angkanya);
+    int angka = int.parse(layar.text);
+    simpanangka.add(angka);
     simpanoperator.add("+");
     layar.text = "0";
     setState(() {});
   }
 
   min() {
-    int angkanya = int.parse(layar.text);
-    simpanangka.add(angkanya);
+    int angka = int.parse(layar.text);
+    simpanangka.add(angka);
     simpanoperator.add("-");
     layar.text = "0";
     setState(() {});
   }
 
   kali() {
-    int angkanya = int.parse(layar.text);
-    simpanangka.add(angkanya);
+    int angka = int.parse(layar.text);
+    simpanangka.add(angka);
     simpanoperator.add("X");
     layar.text = "0";
     setState(() {});
   }
 
   bagi() {
-    int angkanya = int.parse(layar.text);
-    simpanangka.add(angkanya);
+    int angka = int.parse(layar.text);
+    simpanangka.add(angka);
     simpanoperator.add("/");
     layar.text = "0";
     setState(() {});
   }
 
   quad() {
-    int angkanya = int.parse(layar.text);
-    simpanangka.add(angkanya);
+    int angka = int.parse(layar.text);
+    simpanangka.add(angka);
     simpanoperator.add("^");
     layar.text = "0";
     setState(() {});
@@ -105,7 +105,7 @@ class _MyAppState extends State<MyApp> {
                   focusColor: Colors.white,
                   prefixIcon: Icon(
                     Icons.calculate,
-                    color: Colors.grey,
+                    color: Colors.blue,
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0),
@@ -115,15 +115,15 @@ class _MyAppState extends State<MyApp> {
                         const BorderSide(color: Colors.blue, width: 1.0),
                     borderRadius: BorderRadius.circular(10.0),
                   ),
-                  fillColor: Colors.grey,
+                  fillColor: Colors.blue,
                   hintStyle: TextStyle(
-                    color: Colors.grey,
+                    color: Colors.blue,
                     fontSize: 16,
                     fontFamily: "verdana_regular",
                     fontWeight: FontWeight.w400,
                   ),
                   labelStyle: TextStyle(
-                    color: Colors.grey,
+                    color: Colors.blue,
                     fontSize: 16,
                     fontFamily: "verdana_regular",
                     fontWeight: FontWeight.w400,
@@ -259,8 +259,8 @@ class _MyAppState extends State<MyApp> {
                             context,
                             MaterialPageRoute(
                               builder: (context) => HHasil(
-                                angkanya: simpanangka,
-                                operatornya: simpanoperator,
+                                angka: simpanangka,
+                                operator: simpanoperator,
                               ),
                             ),
                           ).then((value) => initState());
