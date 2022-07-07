@@ -1,0 +1,5 @@
+1. Dropdown digunakan untuk menampilkan list pilihan ketika di click
+2. InteractiveViewer digunakan untuk widget yang ukurannya terlalu besar, ketika di klik bisa di geser/zoom
+3. ListStyle digunakan untuk membuat listview yang sudah ada switch, radiobutton dan checkbox tanpa harus manual, tidak perlu dikasih Gesture Detector karena sudah punya onchanged sendiri
+4. RefreshIndicator digunakan untuk menampilkan dan menambah refresh indicator saat halaman di scroll kebawah seperti refresh di aplikasi
+5. PhysicalModel digunakan untuk memberi shadow kepada objek
